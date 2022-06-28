@@ -1,0 +1,102 @@
+body{
+    background-color: #f1f1f1;
+}
+.header{
+    font-family: 'Amatic SC', 'cursive';
+    font-size: 30px;
+}
+td{                      /* cells of the table */
+    min-width: 100px;
+    height:10px; 
+    white-space: wrap;
+    padding: 0 0.5rem;
+    background-color: white;
+}
+.sno{       /*  Serial No.  */
+    min-width: 50px;
+    text-align: center;
+    background-color: #e6e6e6;
+    color: rgba(0, 0, 0, 0.7);
+    border: none;
+}
+h1{     /*   Heading of the page   */
+    text-align: center;
+    margin: 0;
+}
+td:hover:not(.sno) {    /*  hover over all the cells except the s.no. */
+    background-color: rgba(60, 170, 243, 0.281);
+}
+table {
+    display:table;
+    white-space: wrap;
+    font-family: 'Laila', sans-serif;
+    border-collapse: collapse;
+}
+table td:not(.sno) {
+    border: 1px solid #e6e6e6;
+}
+table th {
+    position: relative;
+    background-color: #e6e6e6;
+    color: rgba(0, 0, 0, 0.7);
+}
+.resizer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    cursor: col-resize;
+    user-select: none;
+}
+.resizer:hover,
+.resizing {
+    border-right: 2px solid blue;
+}
+.resizable {
+    border: 1px solid #e6e6e6;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+#resizeMe{
+    overflow: auto;
+    white-space: nowrap;
+}
+#export_button{
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    background-color: rgba(13, 228, 67, 0.1);
+    cursor: pointer;
+}
+#export_button img{
+    height: 20px;
+    margin-right: 4px;
+}
+th img {
+    height: 10px;
+}
+.clicked{
+        cursor: text;
+        background-color: rgba(255, 255, 0, 0.377)  !important;
+        padding: 0;
+        margin: 0;
+        height: max-content;
+        width: max-content;
+}
+.clicked input{
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+}
+#myInput{
+    box-shadow: none;
+    padding: 4px 0;
+    height: max-content;
+    width: fit-content;
+    background: transparent;
+}
